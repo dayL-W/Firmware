@@ -215,9 +215,9 @@ private:
 
 	static constexpr float _innov_lpf_tau_inv = 0.2f;	///< Preflight low pass filter time constant inverse (1/sec)
 	static constexpr float _vel_innov_test_lim =
-		0.5f;	///< Maximum permissible velocity innovation to pass pre-flight checks (m/sec)
+        2.0f;	///< Maximum permissible velocity innovation to pass pre-flight checks (m/sec)
 	static constexpr float _hgt_innov_test_lim =
-		1.5f;	///< Maximum permissible height innovation to pass pre-flight checks (m)
+        6.0f;	///< Maximum permissible height innovation to pass pre-flight checks (m)
 	static constexpr float _nav_yaw_innov_test_lim =
 		0.25f;	///< Maximum permissible yaw innovation to pass pre-flight checks when aiding inertial nav using NE frame observations (rad)
 	static constexpr float _yaw_innov_test_lim =
